@@ -6,8 +6,5 @@ class Product < ApplicationRecord
 
 	def premium_default
 		self.premium ||= false
-=begin		unless self.premium.present? or self.premium == true
-			self.premium = false			
-		end
-=end	end
+	end
 end
