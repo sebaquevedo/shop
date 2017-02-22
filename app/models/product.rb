@@ -1,7 +1,5 @@
 class Product < ApplicationRecord
 	belongs_to :category
-
-
 	scope :premium_search, ->{ where(premium: true)}
 	scope :last_n, ->(cant) {order('id DESC').limit(cant)}
 
@@ -30,3 +28,4 @@ class Product < ApplicationRecord
 
 
 end
+
